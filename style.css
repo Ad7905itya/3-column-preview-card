@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.preview-card{
+    margin: 20px;
+    margin-top: 50px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.item{
+    max-width: 305px;
+    height: 500px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.item:nth-child(1){
+    background-color: #e28525;
+}
+
+.item:nth-child(2){
+    background-color: #016972;
+}
+
+.item:nth-child(3){
+    background-color: #00403f;
+}
+
+h2{
+    color: #f2f2f2;
+    margin-block: 40px;
+    opacity: 0.85;
+    font-size: 34px;
+    font-family:Big Shoulders Display, sans-serif;
+    text-transform: uppercase;
+}
+
+.para{
+    font-size: 15px;
+    font-family: Lexend Deca,sans-serif;
+    line-height: 1.8;
+    /* margin-bottom: 85px; */
+    opacity: 0.75;
+    color: #f2f2f2;
+}
+
+.btn{
+    background-color: #f2f2f2;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    position: absolute;
+    bottom: 45px;
+    border-radius: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.color-1{
+    color: #e28525;
+}
+
+.color-2{
+    color: #016972;
+}
+
+.color-3{
+    color: #00403f;
+}
+
+.color-1:hover{
+    background-color: #e28525;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.color-2:hover{
+    background-color: #016972;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.color-3:hover{
+    background-color: #00403f;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+footer{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0c0834;
+    padding: 20px 0;
+}
+
+.attribution{
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: darkcyan;
+}
+
+
+
+@media screen and (max-width: 770px){
+    .item{
+        height: 460px;
+    }
+    h2{
+        margin-block: 35px;
+    }
+    .para{
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .preview-card{
+        flex-direction: column;
+    }
+    .item{
+        height: 430px;
+    }
+}
